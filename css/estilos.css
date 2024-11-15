@@ -1,0 +1,264 @@
+/*
+.cabin-fuentePrincipal {
+  font-family: "Cabin", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+*/
+
+*{
+    font-family: "Cabin", sans-serif;
+
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(72, 255, 0);
+  }
+
+h1{
+    color: #510d1b;
+    font-size: 3rem;
+    text-align: center;
+}
+h2{
+    padding-top:25px;
+    color: #510d1b;
+    font-size: 2rem;
+    text-align: center;
+}
+
+h3{
+    padding-top:25px;
+    color: #2500dd;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+h4{
+    padding-top:25px;
+    color: #000000;
+    font-size: 1rem;
+    text-align: center;
+}
+
+/*----- HEADER*/
+
+.header{
+
+    background-color: pink;
+    display: flex;
+    flex-flow: row wrap;
+
+    align-items:stretch;
+    justify-content: space-evenly;
+
+    
+    height:10vh;
+    padding:10px 20px;
+    align-items: center;
+    justify-content: space-between;
+      
+    .logo{
+        width: 200px;
+    }
+
+    nav{
+      
+        ul{
+            list-style: none;
+            li{
+                display: inline-block;
+                margin-right: 15px;
+                a{
+                    text-decoration: none;
+                    color:  #510d1b;
+                    font-size: 0.8em;
+                  
+                }
+            }
+           
+        }
+    }
+}
+
+/*----- MAIN*/
+
+main{
+    background-color: cyan;
+    padding: 10px;
+    .secIndexPrincipal{
+
+        background-color: coral;
+        padding: 10px;
+        margin: 0 auto;
+    }
+    
+    .secIndexDestacados{
+    
+        background-color: yellow;
+        padding: 10px;
+        margin: 0 auto;
+        width: 80%;
+        .galeriaDestacados{
+            background-color: red;
+            
+            display: flex;
+            flex-flow: row wrap;
+
+            align-items:stretch;
+            justify-content: space-evenly;
+
+
+         .tarjetaDestacados{
+            background-color: seagreen;
+            width:250px;
+
+            display: inline-block;
+
+
+            text-align: center;
+            h3{
+                font-size: 1.2rem;
+            }
+            h4{
+                font-size: 1rem;
+            }
+           
+            img{
+                width: 180px;
+             }
+         }
+        }
+    
+    }
+
+}
+
+/*OPINION DE CLIENTES RESEÑAS*/
+.opinionesClientes{
+    text-align: center;
+    .galeriaClientes{
+       background-color: pink;
+        padding:50px;
+        margin:0 auto;
+        width: 60%;
+        display:flex;
+        justify-content: space-evenly;
+        row-gap: 20px;
+        flex-wrap: wrap;
+        .tarjetaClientes{
+            background-color: grey;
+
+            width: 250px;
+
+            img{
+                width: 200px;
+
+            }
+        }
+    }
+}
+
+.footer{
+
+    display: grid;
+    grid-template: auto 1fr auto auto/ auto 1fr auto;
+    grid-gap: 10px;
+    gap: 10px;
+    background-color: purple;
+
+.descuentoEmail{
+
+    background-color: yellow;
+    grid-column: 1 / 4;
+    place-items: center;
+    align-items: center;
+}
+    .logoFooter{
+
+        background-color: yellowgreen;
+        grid-column: 1 / 2;
+    
+    }
+    .atencionAlCliente{
+        background-color: lavender;
+
+        grid-column: 1 / 2;
+    }
+
+    .whoss{
+        background-color: blue;
+        grid-column: 2 / 3;
+        grid-row:2/4;
+        place-items: center;
+        ul{
+        list-style: none;
+        }
+
+    }
+
+    address{
+
+        grid-column: 3 / 4;
+        grid-row: 2/3;
+    
+    }
+
+    .redesSociales{
+        background-color: rgb(0, 71, 0);
+
+        grid-column: 3 / 4;
+        grid-row: 3/4;
+        place-items: center;
+
+        ul{
+            list-style: none;
+
+            li{
+            background-color: green;
+            display: inline-block;
+            justify-content: space-evenly;
+
+            }
+        }
+
+    }
+
+    #creditos{
+        background-color: sienna;
+
+        grid-column: 1 / 4;
+        text-align: center;
+
+    }
+
+
+}
+
+
+
+
+
+/* BOTÓN AL TOP*/
+
+.regresaArriba {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+    
+.regresaArriba:hover {
+    background-color: #0056b3;
+}
