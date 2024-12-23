@@ -1,3 +1,20 @@
+// Función para obtener estaciones por género desde la API de Laut.fm
+async function getStationsByGenre(genre) {
+  const url = `https://api.laut.fm/stations/genre/${genre}?order=desc&limit=10`;
+
+  try {
+      const response = await fetch(url);
+      if (!response.ok) {
+          throw new Error(`Error: ${response.status}`);
+      }
+      const data = await response.json();
+      return data;
+  } catch (error) {
+      console.error('Error al hacer la consulta:', error);
+  }
+}
+
+
 var valGenre;
 var emisoraActual;
 
