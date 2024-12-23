@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <script type="text/javascript" src="../api/lautfm_js_tools-master/lautfm_js_tools.js"></script>
+
+</head>
+<body>
+    <div id="cancioncita"></div>
+
+<!--
+<script type="text/html" id="song_template" charset="utf-8">
+  <%= this.title %> - <%= this.artist.name %> (<%= this.started_at.humanTimeLong() %> - <%= this.ends_at.humanTimeLong() %>)
+</script>
+
+<script type="text/javascript" charset="utf-8">
+  laut.fm.station('flatlines').current_song({container:'song', template:'song_template'}, true);
+</script>
+-->
+
+
+<h3>Reproductor de Audio en LAUT</h3>
+
+<audio id="reproductorRadio" controls>
+    Tu navegador no soporta la etiqueta de audio.
+ </audio>
+
+    <div id="parteUno" style="display: block;">
+        
+    <form id="formularioGenre">
+        <label for="genre">Género:</label><br>
+        <input type="text" id="genre" name="genre"><br>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+
+    <div id="parteDos" style="display: none;">
+        <form id="selectorRadio">
+ 
+        </form>
+    </div>
+
+
+        <script src="../JS/ListaReproductorRadio.js"></script>
+
+
+</body>
+</html>>

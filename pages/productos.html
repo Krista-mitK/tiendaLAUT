@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos LAUT</title>
-    <link rel="icon" href="./assets/icolaut_32.ico">
+    <link rel="icon" href="../assets/icolaut_32.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400..700;1,400..700&family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap" rel="stylesheet">
@@ -33,7 +33,60 @@
 
     <main>
     <!-- M A I N -->
+    <section class="secProductosPrincipal">
 
+        <h1>LAUT - el sonido de tus bandas favoritas</h1>
+
+        <p>En esta sección podrás disfrutar de algunas estaciones de radio. La busqueda está limitada por género músical, podés buscar por ejemplo:
+        </p>
+        
+        <ul>
+            <li>Rock</li>
+            <li>Techno</li>
+            <li>Metal</li>
+            <li>Jazz</li>
+            <li>Dance</li>
+            <li>Pop</li>
+        </ul>
+        
+
+
+    </section>
+    <section class="secRadio">
+        <div id="cancioncita"></div>
+
+        <!--
+        <script type="text/html" id="song_template" charset="utf-8">
+          <%= this.title %> - <%= this.artist.name %> (<%= this.started_at.humanTimeLong() %> - <%= this.ends_at.humanTimeLong() %>)
+        </script>
+        
+        <script type="text/javascript" charset="utf-8">
+          laut.fm.station('flatlines').current_song({container:'song', template:'song_template'}, true);
+        </script>
+        -->
+        
+        
+        <h3>Reproductor de Audio en LAUT</h3>
+        
+            <div id="parteUno" style="display: block;">
+                
+            <form id="formularioGenre">
+                <label for="genre">Género:</label><br>
+                <input type="text" id="genre" name="genre"><br>
+                <button type="submit">Enviar</button>
+              </form>
+            </div>
+        
+            <div id="parteDos" style="display: none;">
+                <form id="selectorRadio">
+         
+                </form>
+            </div>
+
+            <audio id="reproductorRadio" controls>
+                Tu navegador no soporta la etiqueta de audio.
+             </audio>
+    </section>
 
     </main>
 
@@ -94,6 +147,9 @@
         <p id="creditos">2024 LAUT | Todos los derechos reservados</p>
 
     </footer>
+
+
+    <script src="../JS/ListaReproductorRadio.js"></script>
 
 </body>
 </html>
