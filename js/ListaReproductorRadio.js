@@ -45,10 +45,13 @@ var fetchStations = function(genre, order, limit){
   var url = `https://api.laut.fm/stations/genre/${genre}?order=${order}&limit=${limit}`;
   fetch(url)
    .then(response => response.json())
-   .then(data => show_stations(data))
+   .then(data => {
+    show_stations(data);
+console.log(data);
+    })
    .catch(error => console.error('Error:', error));
   };
-//     fetchStations('Rock', 'desc',5);  
+
 fetchStations(valGenre, 'desc',5);  
  
 

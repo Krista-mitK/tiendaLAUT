@@ -37,7 +37,18 @@
     <div class="formularioContacto">
          <h2>Contacto</h2>
 
-            <p>Gracias por tu mensaje. El equipo de <span>LAUT</span> pronto se comunicara con vos. Disfruta de nuestas secciones.</p>
+         <form action="./mensajeEnviado.html" method="post">
+            <label for="name">Nombre:</label>
+             <input type="text" id="name" name="name" required>
+              <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+            <button type="submit">Enviar</button>
+           </form>
+
+           <alert> <p>Gracias por tu mensaje. El equipo de <span>LAUT</span> pronto se comunicara con vos. Disfruta de nuestas secciones.</p></alert>
+           
 
 
     </main>
